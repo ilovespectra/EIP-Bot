@@ -1,6 +1,6 @@
-# EIP Linting Bot
+# HIP Linting Bot
 
-This Github Actions integrated bot lints EIPs and provides feedback for authors; its goal is to catch simple problems, notify the relevant individuals to review, and merge simple changes automatically.
+This Github Actions integrated bot lints HIPs and provides feedback for authors; its goal is to catch simple problems, notify the relevant individuals to review, and merge simple changes automatically.
 
 # Usage
 
@@ -10,7 +10,7 @@ on: [pull_request_target]
 jobs:
   auto_merge_bot:
     runs-on: ubuntu-latest
-    name: EIP Auto-Merge Bot
+    name: HIP Auto-Merge Bot
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -65,7 +65,7 @@ Feel free to share ideas on how to improve testing procedures.
 
 `npm run it` runs the bot end to end; which means you can integrate and test with github directly. It uses the typescript built script so don't forget to build that by using `npm run build` or `npm run watch`.
 
-1. Download your forked `EIPS` repo
+1. Download your forked `HIPS` repo
 2. Create a [Github Token](/creating-a-personal-access-token)
 3. Create a PR in your forked repo doing anything, I recommend just editing a couple lines in an already existing EIPs
 4. Create a .env variable in the root dir with the following information defined:
